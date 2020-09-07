@@ -1,0 +1,5 @@
+#/==dir *==string ?==char []==list !==not
+
+*.txt
+*.bat
+test.py
