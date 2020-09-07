@@ -16,9 +16,14 @@ linecount:int=0
 ipbancount:int=0
 wars:int=0
 
-with open(r'/home/zh1/py/ipinput.txt') as ipinput:
-    with open(r'/home/zh1/py/cmdout.txt','w') as cmdout:
-        fl=ipinput.readlines()
+with open(r'ipinput.txt',encoding="utf-8") as ipinput:
+    with open(r'cmdout.txt','w',encoding="utf-8") as cmdout:
+        try:
+            fl=ipinput.readlines()
+        except:
+            ipinput.close()
+            ipinput=open(r'ipinput.txt',encoding="gbk")
+            fl=ipinput.readlines()
         for i in fl:
             linecount+=1
             
