@@ -3,3 +3,4 @@
 *.txt
 *.bat
 test.py
+/__pycache__

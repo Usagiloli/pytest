@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 
 
-#Author:usagiloli
-
-
+#AnhengDAS blacklist command generator
+#Copyright(C) 2020 usagiloli<usagiloli@hotmail.com>
 
 import re
+import Copyleft
 
+Copyleft.ShowCopyright()
 #ipregex
 ipstr:str=r'(((25[0-5]\.)|(2[0-4][0-9]\.)|(1[0-9][0-9]\.)|([1-9][0-9]\.)|([0-9]\.)){3}((25[0-5])|(2[0-4][0-9])|(1[0-9][0-9])|([1-9][0-9])|([0-9])))'
 ipreg=re.compile(ipstr)
